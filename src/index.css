@@ -1,0 +1,205 @@
+:root {
+	--white: #fff;
+	--primary: #61ecbc;
+	--black: #182339;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background-image: url('/background.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+	font-family: 'Outfit', sans-serif;
+	font-size: 2rem;
+}
+
+.container {
+	max-width: 60rem;
+	width: 95%;
+	margin: 0 auto;
+}
+
+.app-title {
+	font-size: 3.8rem;
+	margin-top: 5rem;
+	color: var(--white);
+}
+
+.app-title span {
+	display: block;
+	color: var(--primary);
+	font-size: 4.4rem;
+}
+
+.content {
+	margin-top: 5rem;
+	padding: 4rem 2rem;
+	background-color: var(--white);
+	border-radius: 1rem;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+/* CriptoSearch - Form */
+.form,
+.field {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.form .error-message {
+	margin: 0;
+	padding: 1rem;
+	color: var(--white);
+	background-color: var(--black);
+}
+
+.form label {
+	color: var(--black);
+}
+
+.form select {
+	background-color: #ecebeb;
+	border: none;
+	padding: 1rem;
+	border-radius: 1rem;
+	font-size: 1.8rem;
+}
+
+.form [type='submit'] {
+	background-color: var(--primary);
+	color: var(--black);
+	border: none;
+	padding: 1rem;
+	font-weight: 900;
+	cursor: pointer;
+	text-transform: uppercase;
+	margin-top: 2rem;
+	transition: background-color 300ms ease;
+}
+
+.form [type='submit']:hover {
+	background-color: #0cb387;
+}
+
+/* Result Crypto Price */
+.result-wrapper {
+	margin-top: 5rem;
+}
+
+.result-wrapper h2 {
+	text-align: center;
+}
+
+.result {
+	display: grid;
+	grid-template-columns: 1fr;
+	align-items: center;
+	gap: 1rem;
+}
+
+.result img {
+	width: 50%;
+	margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+	.result {
+		grid-template-columns: 2fr 3fr;
+	}
+	.result img {
+		width: 100%;
+	}
+}
+
+.result p {
+	margin-bottom: 1rem;
+	font-size: 2rem;
+}
+
+.result span {
+	font-weight: bold;
+}
+
+/* Loader */
+.sk-cube-grid {
+	width: 8rem;
+	height: 8rem;
+	margin: 100px auto;
+}
+
+.sk-cube-grid .sk-cube {
+	width: 33%;
+	height: 33%;
+	background-color: var(--black);
+	float: left;
+	-webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+	animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+}
+.sk-cube-grid .sk-cube1 {
+	-webkit-animation-delay: 0.2s;
+	animation-delay: 0.2s;
+}
+.sk-cube-grid .sk-cube2 {
+	-webkit-animation-delay: 0.3s;
+	animation-delay: 0.3s;
+}
+.sk-cube-grid .sk-cube3 {
+	-webkit-animation-delay: 0.4s;
+	animation-delay: 0.4s;
+}
+.sk-cube-grid .sk-cube4 {
+	-webkit-animation-delay: 0.1s;
+	animation-delay: 0.1s;
+}
+.sk-cube-grid .sk-cube5 {
+	-webkit-animation-delay: 0.2s;
+	animation-delay: 0.2s;
+}
+.sk-cube-grid .sk-cube6 {
+	-webkit-animation-delay: 0.3s;
+	animation-delay: 0.3s;
+}
+.sk-cube-grid .sk-cube7 {
+	-webkit-animation-delay: 0s;
+	animation-delay: 0s;
+}
+.sk-cube-grid .sk-cube8 {
+	-webkit-animation-delay: 0.1s;
+	animation-delay: 0.1s;
+}
+.sk-cube-grid .sk-cube9 {
+	-webkit-animation-delay: 0.2s;
+	animation-delay: 0.2s;
+}
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+	0%,
+	70%,
+	100% {
+		-webkit-transform: scale3D(1, 1, 1);
+		transform: scale3D(1, 1, 1);
+	}
+	35% {
+		-webkit-transform: scale3D(0, 0, 1);
+		transform: scale3D(0, 0, 1);
+	}
+}
+
+@keyframes sk-cubeGridScaleDelay {
+	0%,
+	70%,
+	100% {
+		-webkit-transform: scale3D(1, 1, 1);
+		transform: scale3D(1, 1, 1);
+	}
+	35% {
+		-webkit-transform: scale3D(0, 0, 1);
+		transform: scale3D(0, 0, 1);
+	}
+}
